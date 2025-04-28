@@ -1,4 +1,3 @@
-
 import { User, Club, Event, Achievement, Certificate, LeaderboardEntry } from "../types";
 
 // Sample users
@@ -241,6 +240,11 @@ export const mockLeaderboard: LeaderboardEntry[] = [
     rank: 3
   }
 ];
+
+// Get all clubs
+export const getClubs = (): Club[] => {
+  return mockClubs;
+};
 
 // Get initial user for demo
 export const getCurrentUser = (): User => {
